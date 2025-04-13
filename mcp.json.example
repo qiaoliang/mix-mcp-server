@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mix_server": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/qiaoliang/working/code/mix-server",
+        "run",
+        "main.py"
+      ]
+    }
+  }
+}
