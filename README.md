@@ -5,6 +5,7 @@ A Python-based server that provides local time functionality through MCP (Model 
 ## Features
 
 - Get current local time in various formats
+- Open files and URLs in the default web browser
 - Simple and lightweight implementation
 - Built with FastMCP for easy integration
 - Uses uv for fast and reliable dependency management
@@ -71,6 +72,11 @@ The project uses uv for all Python-related operations:
 The server provides the following functionality:
 
 - `get_local_current_time()`: Returns the current local time in the format "YYYY-MM-DD@HH:MM:SS"
+- `open_file_or_url_in_browser(target)`: Opens a file or URL in the default web browser
+  - Supports both local files and web URLs
+  - For URLs: Use complete URL with protocol (e.g., "https://www.google.com")
+  - For files: Use local file path (relative or absolute)
+  - Returns a message indicating the result of the operation
 
 To start the server:
 ```bash
